@@ -101,7 +101,7 @@ export const Content = styled.div`
   width: calc(100% - 48px);
   display: flex;
   flex-direction: column;
-  border-radius: 16px 0 0 16px;
+  border-radius: 16px 16px 0 0;
   padding: 24px 24px 40px;
   justify-content: space-between;
   background: #fff;
@@ -109,6 +109,7 @@ export const Content = styled.div`
   @media ${device.laptop} {
     width: 43%;
     padding: 45px 56px 56px;
+    border-radius: 16px 0 0 16px;
   }
 `;
 

@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import Drawer from "react-modern-drawer";
 import { device } from "../../constants/device";
 
 export const Wrapper = styled.div`
   position: absolute;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 99;
 `;
 
 export const MobileWrapper = styled.div`
@@ -159,5 +160,43 @@ export const Button = styled.a`
 
   &:hover {
     box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.10);
+  }
+`;
+
+export const ModernDrawer = styled(Drawer)`
+  border: 1px solid red;
+  height: 406px !important;
+  border-radius: 16px 16px 0px 0px;
+  background: radial-gradient(94.82% 94.82% at 22% 26.92%, #F42424 19.1%, #C00B4C 100%) !important;
+`;
+
+export const DrawerHeader = styled.div`
+  height: 56px;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0 18px;
+`;
+
+export const DrawerMenu = styled.div`
+  display: flex;
+  padding: 0 24px;
+  flex-direction: column;
+  gap: 32px;
+`;
+
+export const DrawerMenuItem = styled.div`
+  color: #FFF;
+  font-feature-settings: 'ss06' on, 'ss05' on, 'ss18' on, 'ss17' on, 'ss16' on, 'ss15' on, 'ss14' on, 'ss13' on, 'ss12' on, 'ss11' on, 'ss10' on, 'ss09' on, 'ss08' on, 'ss07' on;
+  font-family: "Wanted Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.64px;
+
+  & span {
+    cursor: pointer;
   }
 `;

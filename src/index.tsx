@@ -13,6 +13,8 @@ import {
   ContactUs
 } from "./components";
 
+import "react-modern-drawer/dist/index.css";
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
