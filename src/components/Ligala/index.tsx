@@ -1,6 +1,10 @@
 import Banner from "../../assets/quarantine.jpg";
 import ShieldTickIcon from "../../assets/icons/shield-tick.svg";
 import ScaleIcon from "../../assets/icons/scale.svg";
+import MonitorIcon from "../../assets/icons/monitor.svg";
+import FolderCheckIcon from "../../assets/icons/folder-check.svg";
+import SearchIcon from "../../assets/icons/search-md.svg";
+import MessageIcon from "../../assets/icons/message-dots-circle.svg";
 
 import { LigalaBanner } from "../../components";
 
@@ -57,90 +61,66 @@ const Ligala = () => {
               <ListItem>
                 <Icon>
                   <img
-                    src={ShieldTickIcon}
-                    alt="Register and create your website within minutes, mention templates"
+                    src={MonitorIcon}
+                    alt="Save them the travel. Onboard all your clients virtually."
                   />
                 </Icon>
-                Register and create your website within minutes, mention
-                templates
+                Save them the travel. Onboard all your clients virtually.
               </ListItem>
               <ListItem>
                 <Icon>
                   <img
                     src={ScaleIcon}
-                    alt="Digital library powered by CDAsia"
+                    alt="Get access to our legal resource library powered by CDAsia."
                   />
                 </Icon>
-                Digital library powered by CDAsia
+                Get access to our legal resource library powered by CDAsia.
               </ListItem>
               <ListItem>
                 <Icon>
                   <img
-                    src={ScaleIcon}
-                    alt="How ligala works; describe feature. Insert placeholder line here."
+                    src={FolderCheckIcon}
+                    alt="Stay on track. Manage client appointments and more."
                   />
                 </Icon>
-                How ligala works; describe feature. Insert placeholder line
-                here.
-              </ListItem>
-              <ListItem>
-                <Icon>
-                  <img
-                    src={ScaleIcon}
-                    alt="How ligala works; describe feature. Insert placeholder line here."
-                  />
-                </Icon>
-                How ligala works; describe feature. Insert placeholder line
-                here.
+                Stay on track. Manage client appointments and more.
               </ListItem>
               <Actions>
-                <Button href="#">Accepting Registrations</Button>
+                <Button href="#">Open an Office</Button>
               </Actions>
             </List>
           </Column>
           <Divider />
           <Column>
             <List>
-              <Heading>FINDING A LAWYER?</Heading>
+              <Heading>TRYING TO FIND A LAWYER?</Heading>
               <Subheading>Find trusted lawyers for your legal needs</Subheading>
               <ListItem>
                 <Icon>
                   <img
+                    src={SearchIcon}
+                    alt="Discover the right lawyer for your needs and budget."
+                  />
+                </Icon>
+                Discover the right lawyer for your needs and budget.
+              </ListItem>
+              <ListItem>
+                <Icon>
+                  <img
                     src={ShieldTickIcon}
-                    alt="Register and create your website within minutes, mention templates"
+                    alt="Have peace of mind knowing your data and information are secure"
                   />
                 </Icon>
-                Register and create your website within minutes, mention
-                templates
+                Have peace of mind knowing your data and information are secure
               </ListItem>
               <ListItem>
                 <Icon>
                   <img
-                    src={ScaleIcon}
-                    alt="Digital library powered by CDAsia"
+                    src={MessageIcon}
+                    alt="Consult, video chat, share files and more. All in one place."
                   />
                 </Icon>
-                Digital library powered by CDAsia
-              </ListItem>
-              <ListItem>
-                <Icon>
-                  <img
-                    src={ScaleIcon}
-                    alt="How ligala works; describe feature. Insert placeholder line here."
-                  />
-                </Icon>
-                How ligala works; describe feature. Insert placeholder line
-                here.
-              </ListItem>
-              <ListItem>
-                <Icon>
-                  <img
-                    src={ScaleIcon}
-                    alt="How ligala works; describe feature. Insert placeholder line here."
-                  />
-                </Icon>
-                How ligala works; describe feature. Insert placeholder line
-                here.
+                Consult, video chat, share files and more. All in one place.
               </ListItem>
             </List>
           </Column>

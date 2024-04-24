@@ -24,13 +24,8 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 56px;
   justify-content: center;
   align-items: center;
-
-  @media ${device.laptopL} {
-    gap: 64px;
-  }
 `;
 
 export const Title = styled.h1`
@@ -45,10 +40,12 @@ export const Title = styled.h1`
   line-height: 100%;
   letter-spacing: -3px;
   margin: 0;
+  margin-bottom: 56px;
 
   @media ${device.tablet} {
     max-width: 700px;
     font-size: 72px;
+    margin-bottom: 64px;
   }
 
   @media ${device.laptop} {
@@ -71,10 +68,12 @@ export const Description = styled.div`
   line-height: 120%;
   letter-spacing: 0.42px;
   max-width: 380px;
+  margin-bottom: 28px;
 
   @media ${device.laptopL} {
     font-size: 21px;
     max-width: 454px;
+    margin-bottom: 32px;
   }
 `;
 

@@ -32,8 +32,8 @@ const About = () => {
               <Badge>mūnŭs / moo-nuhs</Badge>
               Latin for Service or Duty, Munus is what inspires our mission. We
               team-up with professionals from different practices in order to
-              deliver accessible, ethical technology that fosters
-              Professional-Client work experiences.
+              unlock accessible, client-centered, and ethical technology that
+              fosters Professional-Client work experiences.
             </Description>
           </Content>
           <Divider>
@@ -53,13 +53,14 @@ const About = () => {
                 opportunities.
               </Title>
               <Description>
-                With the swift growth of digitization and software services, the
-                days of having to be physically present to accomplish tasks are
-                behind us.
+                With the swift growth of digital transformation and software
+                services, having to be physically present is becoming less
+                essential to getting things done.
                 <br />
                 <br />
-                Munus capitalizes on technology to simplify the process of getting
-                professional practices started and professional needs fulfilled.
+                Munus capitalizes on this opportunity to use technology as a
+                bridge to simplify the process of getting professional practices
+                started and professional needs fulfilled remotely.
               </Description>
             </Content>
           </Anchor>

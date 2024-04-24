@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="#">Facebook</a>
           </Link>
         </SocialLinks>
-        <Email>access@mymunus.com</Email>
+        <Email href="mailto:access@mymunus.com">access@mymunus.com</Email>
       </Wrapper>
       <Copyright>© 2024 All Rights Reserved</Copyright>
     </Center>

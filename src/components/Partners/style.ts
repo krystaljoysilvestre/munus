@@ -41,11 +41,19 @@ export const Logos = styled.div`
   gap: 48px;
   margin-bottom: 24px;
 
+  &.has-spacer {
+    margin-bottom: 48px;
+  }
+
   @media ${device.laptop} {
     flex-direction: row;
     width: 95%;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 0px;
+
+    &.has-spacer {
+      margin-bottom: 64px;
+    }
   }
 `;
 

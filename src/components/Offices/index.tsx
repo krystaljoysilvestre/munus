@@ -37,31 +37,34 @@ const Offices = () => {
             <IconContainer>
               <Icon
                 src={EyeIcon}
-                alt="Be discovered. Curate your office and connect with clients."
+                alt="Be discovered. Curate your digital office and connect with clients."
               />
             </IconContainer>
             <Text>
-              Be discovered. <br/> Curate your office and connect with clients.
+              Be discovered. <br /> Curate your digital office and connect with
+              clients.
             </Text>
           </CardItem>
           <CardItem>
             <IconContainer>
               <Icon
                 src={FlashIcon}
-                alt="Simplify workflows with adaptive management tools."
+                alt="Simplify workflows with adaptive Microsoft management tools."
               />
             </IconContainer>
-            <Text>Simplify workflows with adaptive management tools.</Text>
+            <Text>
+              Simplify workflows with adaptive Microsoft management tools.
+            </Text>
           </CardItem>
           <CardItem>
             <IconContainer>
               <Icon
                 src={QRIcon}
-                alt="Share your profile and expertise with your network with a tap."
+                alt="Share your profile and expertise with your network with ease."
               />
             </IconContainer>
             <Text>
-              Share your profile and expertise with your network with a tap.
+              Share your profile and expertise with your network with ease.
             </Text>
           </CardItem>
         </Cards>

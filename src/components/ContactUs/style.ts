@@ -74,6 +74,7 @@ export const ButtonOutlined = styled.a`
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.32px;
+  text-decoration: none;
 
   @media ${device.laptop} {
     width: 151px;

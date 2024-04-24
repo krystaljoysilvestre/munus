@@ -10,3 +10,4 @@ export { default as Tag } from "./Tag";
 export { default as Partners } from "./Partners";
 export { default as ContactUs } from "./ContactUs";
 export { default as Footer } from "./Footer";
+export { default as Modal } from "./Modal";

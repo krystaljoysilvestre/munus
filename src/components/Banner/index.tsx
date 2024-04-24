@@ -18,13 +18,16 @@ const Banner = () => {
       <Header />
       <Container>
         <Content>
-          <Title>Your professional needs, minus the hurdles.</Title>
+          <Title>Your professional needs, minus the barriers.</Title>
           <Description>
-            Munus<Sup>™</Sup> provides professionals and their clients with a
-            full suite of tools plus a space to connect and collaborate.
+            Munus<Sup>™</Sup> envisions a future where clients and professionals
+            across different fields are equipped with a suite of tools and a
+            platform for seamless connection and collaboration.
           </Description>
           <Actions>
-            <ButtonOutlined href="#">Learn More</ButtonOutlined>
+            <ButtonOutlined href="mailto:access@mymunus.com">
+              Ask us More
+            </ButtonOutlined>
             <Button href="#">Open an Office</Button>
           </Actions>
         </Content>

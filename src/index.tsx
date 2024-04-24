@@ -10,7 +10,8 @@ import {
   Ligala,
   Tag,
   Partners,
-  ContactUs
+  ContactUs,
+  Modal
 } from "./components";
 
 import "react-modern-drawer/dist/index.css";
@@ -35,6 +36,7 @@ root.render(
     <Partners />
     {/* Contact section */}
     <ContactUs />
+    <Modal />
   </div>
 );
 

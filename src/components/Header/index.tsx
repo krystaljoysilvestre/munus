@@ -14,7 +14,7 @@ import {
   NavLink,
   Badge,
   Actions,
-  ButtonText,
+  // ButtonText,
   Button,
   MobileWrapper,
   MenuButton,
@@ -89,7 +89,7 @@ const Header = () => {
         </Center>
         <Right>
           <Actions>
-            <ButtonText href="#">Login</ButtonText>
+            {/* <ButtonText href="#">Login</ButtonText> */}
             <Button>Open an Office</Button>
           </Actions>
         </Right>

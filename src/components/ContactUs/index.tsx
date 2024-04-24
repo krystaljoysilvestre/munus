@@ -12,9 +12,13 @@ const ContactUs = () => {
   return (
     <Wrapper id="contact">
       <Container>
-        <Title>Your office is ready for you.</Title>
+        <Title>
+          Your office is getting <br /> ready for you.
+        </Title>
         <Actions>
-          <ButtonOutlined>Contact Us</ButtonOutlined>
+          <ButtonOutlined href="mailto:access@mymunus.com">
+            Ask us more
+          </ButtonOutlined>
           <Button>Open an Office</Button>
         </Actions>
       </Container>

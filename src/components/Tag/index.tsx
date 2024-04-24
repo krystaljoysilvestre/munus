@@ -1,5 +1,5 @@
 import Banner from "../../assets/woman-pay.jpg";
-import Card from "../../assets/card.png";
+import Card from "../../assets/card-2.png";
 
 import {
   Wrapper,
@@ -42,7 +42,7 @@ const Tag = () => {
                 <Badge>COMING SOON!</Badge>
               </div>
               <div>
-                <ContentTitle>Tap And Go</ContentTitle>
+                <ContentTitle>Tap-And-Go</ContentTitle>
                 <ContentText>
                   Talk about munus tag. How munus tag works. Describe features
                   and benefits. Could add a link to show a more detailed guide

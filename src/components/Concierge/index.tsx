@@ -36,25 +36,32 @@ const Concierge = () => {
             <IconContainer>
               <Icon
                 src={FolderSearchIcon}
-                alt="Screen professionals by visiting their digital offices."
+                alt="Review a variety of professionals in their digital offices."
               />
             </IconContainer>
-            <Text>Screen professionals by visiting their digital offices.</Text>
+            <Text>
+              Review a variety of professionals in their digital offices.
+            </Text>
           </CardItem>
           <CardItem>
             <IconContainer>
               <Icon
                 src={ShieldTickIcon}
-                alt="Meet your chosen professional in a secure environment."
+                alt="Work with your chosen professional in a secure environment."
               />
             </IconContainer>
-            <Text>Meet your chosen professional in a secure environment.</Text>
+            <Text>
+              Work with your chosen professional in a secure environment.
+            </Text>
           </CardItem>
           <CardItem>
             <IconContainer>
-              <Icon src={FolderSearchIcon} alt="Settle engagements with ease" />
+              <Icon
+                src={FolderSearchIcon}
+                alt="Track progress and settle engagements with ease."
+              />
             </IconContainer>
-            <Text>Settle engagements with ease</Text>
+            <Text>Track progress and settle engagements with ease.</Text>
           </CardItem>
         </Cards>
       </Container>

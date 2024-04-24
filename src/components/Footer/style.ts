@@ -64,7 +64,7 @@ export const Link = styled.div`
   }
 `;
 
-export const Email = styled.div`
+export const Email = styled.a`
   color: #01263A;
   leading-trim: both;
   text-edge: cap;
@@ -74,6 +74,9 @@ export const Email = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: 21px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 9;
 `;
 
 export const Copyright = styled.div`
