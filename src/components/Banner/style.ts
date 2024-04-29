@@ -125,8 +125,9 @@ export const ButtonOutlined = styled.a`
   }
 `;
 
-export const Button = styled.a`
+export const Button = styled.button`
   display: inline-flex;
+  border: none;
   height: 48px;
   width: 100%;
   max-width: 342px;
@@ -145,6 +146,7 @@ export const Button = styled.a`
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.10);

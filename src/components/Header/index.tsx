@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 
 import logo from "../../assets/munus-logo.svg";
 import menuIcon from "../../assets/icons/menu.svg";
+import { ModalContext } from "../../context/ModalProvider";
 import {
   Wrapper,
   DesktopWrapper,
@@ -25,6 +26,8 @@ import {
 } from "./style";
 
 const Header = () => {
+  const modal = useContext(ModalContext);
+
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const toggleDrawer = () => {
@@ -90,7 +93,9 @@ const Header = () => {
         <Right>
           <Actions>
             {/* <ButtonText href="#">Login</ButtonText> */}
-            <Button>Open an Office</Button>
+            <Button onClick={() => modal.setIsModalOpen(true)}>
+              Open an Office
+            </Button>
           </Actions>
         </Right>
       </DesktopWrapper>
@@ -114,6 +119,7 @@ const Header = () => {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
+            onClick={toggleDrawer}
           >
             <path
               d="M18 6L6 18M6 6L18 18"
@@ -139,6 +145,16 @@ const Header = () => {
           </DrawerMenuItem>
           <DrawerMenuItem>
             <span onClick={() => scrollTo("contact")}>Contact</span>
+          </DrawerMenuItem>
+          <DrawerMenuItem>
+            <button 
+              onClick={() => {
+                toggleDrawer();
+                modal.setIsModalOpen(true);
+              }}
+            >
+              Open an office
+            </button>
           </DrawerMenuItem>
         </DrawerMenu>
       </ModernDrawer>

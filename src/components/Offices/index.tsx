@@ -1,7 +1,11 @@
+import { useContext } from "react";
+
 import BuildingIcon from "../../assets/icons/building.svg";
 import EyeIcon from "../../assets/icons/eye.svg";
 import FlashIcon from "../../assets/icons/flash.svg";
 import QRIcon from "../../assets/icons/qr-code.svg";
+
+import { ModalContext } from "../../context/ModalProvider";
 
 import {
   Container,
@@ -18,6 +22,8 @@ import {
 } from "./style";
 
 const Offices = () => {
+  const modal = useContext(ModalContext);
+
   return (
     <Wrapper id="services">
       <Container>
@@ -69,7 +75,9 @@ const Offices = () => {
           </CardItem>
         </Cards>
         <Actions>
-          <Button href="#">Open an Office</Button>
+          <Button onClick={() => modal.setIsModalOpen(true)}>
+            Open an Office
+          </Button>
         </Actions>
       </Container>
     </Wrapper>

@@ -1,3 +1,5 @@
+import { useContext } from "react";
+
 import Banner from "../../assets/quarantine.jpg";
 import ShieldTickIcon from "../../assets/icons/shield-tick.svg";
 import ScaleIcon from "../../assets/icons/scale.svg";
@@ -5,6 +7,8 @@ import MonitorIcon from "../../assets/icons/monitor.svg";
 import FolderCheckIcon from "../../assets/icons/folder-check.svg";
 import SearchIcon from "../../assets/icons/search-md.svg";
 import MessageIcon from "../../assets/icons/message-dots-circle.svg";
+
+import { ModalContext } from "../../context/ModalProvider";
 
 import { LigalaBanner } from "../../components";
 
@@ -26,10 +30,12 @@ import {
   ListItem,
   Icon,
   Actions,
-  Button
+  Button,
 } from "./style";
 
 const Ligala = () => {
+  const modal = useContext(ModalContext);
+
   return (
     <Wrapper id="ligala">
       <LigalaBanner />
@@ -86,7 +92,9 @@ const Ligala = () => {
                 Stay on track. Manage client appointments and more.
               </ListItem>
               <Actions>
-                <Button href="#">Open an Office</Button>
+                <Button onClick={() => modal.setIsModalOpen(true)}>
+                  Open an Office
+                </Button>
               </Actions>
             </List>
           </Column>

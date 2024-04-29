@@ -2,6 +2,8 @@ import ReactDOM from 'react-dom/client';
 
 import reportWebVitals from './reportWebVitals';
 import GlobalStyle from './styles/globalStyle';
+import ModalProvider from './context/ModalProvider';
+
 import {
   Banner,
   About,
@@ -19,8 +21,9 @@ import "react-modern-drawer/dist/index.css";
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
-  <div>
+  <ModalProvider>
     <GlobalStyle />
     {/* Hero Banner Section */}
     <Banner />
@@ -37,7 +40,7 @@ root.render(
     {/* Contact section */}
     <ContactUs />
     <Modal />
-  </div>
+  </ModalProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

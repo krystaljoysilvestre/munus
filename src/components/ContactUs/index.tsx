@@ -1,3 +1,7 @@
+import { useContext } from "react";
+
+import { ModalContext } from "../../context/ModalProvider";
+
 import { Footer } from "../../components";
 import {
   Wrapper,
@@ -9,6 +13,8 @@ import {
 } from "./style";
 
 const ContactUs = () => {
+  const modal = useContext(ModalContext);
+
   return (
     <Wrapper id="contact">
       <Container>
@@ -19,7 +25,9 @@ const ContactUs = () => {
           <ButtonOutlined href="mailto:access@mymunus.com">
             Ask us more
           </ButtonOutlined>
-          <Button>Open an Office</Button>
+          <Button onClick={() => modal.setIsModalOpen(true)}>
+            Open an Office
+          </Button>
         </Actions>
       </Container>
       <Footer />

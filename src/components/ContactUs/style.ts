@@ -81,8 +81,10 @@ export const ButtonOutlined = styled.a`
   }
 `;
 
-export const Button = styled.a`
+export const Button = styled.button`
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
   background: #F42424;
   display: inline-flex;
   height: 48px;

@@ -16,7 +16,7 @@ export const MobileWrapper = styled.div`
   padding: 0 18px;
   height: 56px;
 
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     display: none;
   }
 `;
@@ -34,7 +34,7 @@ export const DesktopWrapper = styled.div`
   display: none;
   align-items: center;
 
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     display: flex;
   }
 
@@ -71,16 +71,23 @@ export const Nav = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 16px;
   margin: 0;
   padding: 0;
+
+  @media ${device.laptop} {
+    gap: 16px;
+  }
 `;
 
 export const NavItem = styled.li`
-  padding: 0 16px;
+  padding: 0 12px;
   height: 40px;
   display: flex;
   align-items: center;
+
+  @media ${device.laptop} {
+    padding: 0 16px;
+  }
 `;
 
 export const NavLink = styled.div`
@@ -157,6 +164,7 @@ export const Button = styled.a`
   font-weight: 700;
   line-height: 21px; /* 150% */
   letter-spacing: 0.28px;
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.10);
@@ -164,8 +172,7 @@ export const Button = styled.a`
 `;
 
 export const ModernDrawer = styled(Drawer)`
-  border: 1px solid red;
-  height: 406px !important;
+  height: 494px !important;
   border-radius: 16px 16px 0px 0px;
   background: radial-gradient(94.82% 94.82% at 22% 26.92%, #F42424 19.1%, #C00B4C 100%) !important;
 `;
@@ -198,5 +205,34 @@ export const DrawerMenuItem = styled.div`
 
   & span {
     cursor: pointer;
+  }
+
+  & button {
+    display: flex;
+    height: 48px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #FFF;
+    border: none;
+    width: 100%;
+    color: #F42424;
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'dlig' on;
+    font-family: "Wanted Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    cursor: pointer;
+
+    @media ${device.mobileL} {
+      max-width: 342px;
+    }
   }
 `;

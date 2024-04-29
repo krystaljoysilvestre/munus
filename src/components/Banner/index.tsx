@@ -1,3 +1,6 @@
+import { useContext } from "react";
+
+import { ModalContext } from "../../context/ModalProvider";
 import { Header } from "../../components";
 
 import {
@@ -9,10 +12,12 @@ import {
   Sup,
   Actions,
   ButtonOutlined,
-  Button
+  Button,
 } from "./style";
 
 const Banner = () => {
+  const modal = useContext(ModalContext);
+
   return (
     <Wrapper id="hero-banner">
       <Header />
@@ -28,7 +33,9 @@ const Banner = () => {
             <ButtonOutlined href="mailto:access@mymunus.com">
               Ask us More
             </ButtonOutlined>
-            <Button href="#">Open an Office</Button>
+            <Button onClick={() => modal.setIsModalOpen(true)}>
+              Open an Office
+            </Button>
           </Actions>
         </Content>
       </Container>

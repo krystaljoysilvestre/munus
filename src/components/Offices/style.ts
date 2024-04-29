@@ -128,8 +128,10 @@ export const Actions = styled.div`
   }
 `;
 
-export const Button = styled.a`
+export const Button = styled.button`
   display: flex;
+  border: none;
+  cursor: pointer;
   height: 48px;
   width: 100%;
   max-width: 342px;

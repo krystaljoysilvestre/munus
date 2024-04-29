@@ -18,14 +18,14 @@ const Footer = () => {
           <Logo src={MunusLogoBlack} alt="Munus Logo" />
         </div>
         <SocialLinks>
-          <Link>
+          {/* <Link>
             <a href="#">Linkedin</a>
+          </Link> */}
+          <Link>
+            <a href="https://www.instagram.com/mymunus.office/" target="_blank" rel="noopener noreferrer">Instagram</a>
           </Link>
           <Link>
-            <a href="#">Instagram</a>
-          </Link>
-          <Link>
-            <a href="#">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61558765251998" target="_blank" rel="noopener noreferrer">Facebook</a>
           </Link>
         </SocialLinks>
         <Email href="mailto:access@mymunus.com">access@mymunus.com</Email>

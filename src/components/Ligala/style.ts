@@ -223,8 +223,10 @@ export const Actions = styled.div`
   }
 `;
 
-export const Button = styled.a`
+export const Button = styled.button`
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
   background: #F42424;
   display: inline-flex;

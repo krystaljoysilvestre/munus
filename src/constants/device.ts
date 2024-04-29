@@ -1,8 +1,8 @@
 const sizes = {
-  mobile: '424px',
+  mobile: '600px',
   tablet: '767px',
   laptop: '1024px',
-  laptopL: '1440px',
+  laptopL: '1441px',
   desktop: '1920px',
   desktopL: '2560px'
 };

@@ -102,6 +102,10 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
 
+  input[type="email"] {
+    background-color: none !important;
+  }
+
   .sticky {
     position: fixed !important;
     background: #DBF3E7;

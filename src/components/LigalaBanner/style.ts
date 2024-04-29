@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import BannerBg from "../../assets/ligala-banner-bg.svg";
+
 import { device } from "../../constants/device";
 
 export const Wrapper = styled.div`
@@ -8,6 +10,9 @@ export const Wrapper = styled.div`
 export const Banner = styled.div`
   position: relative;
   display: flex;
+  background-image: url(${BannerBg});
+  background-position: bottom;
+  background-repeat: no-repeat;
 `;
 
 export const Bg = styled.img`
