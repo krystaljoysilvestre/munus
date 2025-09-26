@@ -92,7 +92,7 @@ const Ligala = () => {
                 Stay on track. Manage client appointments and more.
               </ListItem>
               <Actions>
-                <Button onClick={() => modal.setIsModalOpen(true)}>
+                <Button href="https://ligala.mymunus.com/">
                   Open an Office
                 </Button>
               </Actions>

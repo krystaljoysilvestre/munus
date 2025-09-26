@@ -1,8 +1,7 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 
 import logo from "../../assets/munus-logo.svg";
 import menuIcon from "../../assets/icons/menu.svg";
-import { ModalContext } from "../../context/ModalProvider";
 import {
   Wrapper,
   DesktopWrapper,
@@ -22,12 +21,10 @@ import {
   ModernDrawer,
   DrawerHeader,
   DrawerMenu,
-  DrawerMenuItem
+  DrawerMenuItem,
 } from "./style";
 
 const Header = () => {
-  const modal = useContext(ModalContext);
-
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const toggleDrawer = () => {
@@ -46,15 +43,16 @@ const Header = () => {
       } else {
         header.classList.remove("sticky");
       }
-    }
+    };
   }, []);
 
   const scrollTo = (section: string) => {
-    document && document.getElementById(section)!.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
+    document &&
+      document.getElementById(section)!.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
 
     setTimeout(() => {
       setIsDrawerOpen(false);
@@ -93,9 +91,7 @@ const Header = () => {
         <Right>
           <Actions>
             {/* <ButtonText href="#">Login</ButtonText> */}
-            <Button onClick={() => modal.setIsModalOpen(true)}>
-              Open an Office
-            </Button>
+            <Button href="https://ligala.mymunus.com/">Open an Office</Button>
           </Actions>
         </Right>
       </DesktopWrapper>
@@ -147,14 +143,7 @@ const Header = () => {
             <span onClick={() => scrollTo("contact")}>Contact</span>
           </DrawerMenuItem>
           <DrawerMenuItem>
-            <button 
-              onClick={() => {
-                toggleDrawer();
-                modal.setIsModalOpen(true);
-              }}
-            >
-              Open an office
-            </button>
+            <a href="https://ligala.mymunus.com/">Open an office</a>
           </DrawerMenuItem>
         </DrawerMenu>
       </ModernDrawer>

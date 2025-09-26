@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../../constants/device";
 
 export const Wrapper = styled.div`
-  background: #01263A;
+  background: #01263a;
   padding: 80px 0;
 
   @media ${device.laptop} {
@@ -17,9 +17,11 @@ export const Container = styled.div`
 `;
 
 export const Heading = styled.h4`
-  color: #A5FF5E;
+  color: #a5ff5e;
   text-align: center;
-  font-feature-settings: 'ss06' on, 'ss05' on, 'ss18' on, 'ss17' on, 'ss16' on, 'ss15' on, 'ss14' on, 'ss13' on, 'ss12' on, 'ss11' on, 'ss10' on, 'ss09' on, 'ss08' on, 'ss07' on;
+  font-feature-settings: "ss06" on, "ss05" on, "ss18" on, "ss17" on, "ss16" on,
+    "ss15" on, "ss14" on, "ss13" on, "ss12" on, "ss11" on, "ss10" on, "ss09" on,
+    "ss08" on, "ss07" on;
   font-family: "Reddit Mono";
   font-size: 16px;
   font-style: normal;
@@ -36,9 +38,11 @@ export const Heading = styled.h4`
 `;
 
 export const Subheading = styled.h3`
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-feature-settings: 'ss06' on, 'ss05' on, 'ss18' on, 'ss17' on, 'ss16' on, 'ss15' on, 'ss14' on, 'ss13' on, 'ss12' on, 'ss11' on, 'ss10' on, 'ss09' on, 'ss08' on, 'ss07' on;
+  font-feature-settings: "ss06" on, "ss05" on, "ss18" on, "ss17" on, "ss16" on,
+    "ss15" on, "ss14" on, "ss13" on, "ss12" on, "ss11" on, "ss10" on, "ss09" on,
+    "ss08" on, "ss07" on;
   font-family: "Wanted Sans";
   font-size: 32px;
   font-style: normal;
@@ -73,7 +77,7 @@ export const Cards = styled.div`
 
 export const CardItem = styled.div`
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   padding: 24px;
   flex-direction: column;
@@ -94,7 +98,7 @@ export const CardItem = styled.div`
 
 export const IconContainer = styled.div`
   border-radius: 8px;
-  background: rgba(165, 255, 94, 0.20);
+  background: rgba(165, 255, 94, 0.2);
   display: flex;
   width: 40px;
   height: 40px;
@@ -110,7 +114,9 @@ export const Icon = styled.img`
 
 export const Text = styled.div`
   color: #fff;
-  font-feature-settings: 'ss06' on, 'ss05' on, 'ss18' on, 'ss17' on, 'ss16' on, 'ss15' on, 'ss14' on, 'ss13' on, 'ss12' on, 'ss11' on, 'ss10' on, 'ss09' on, 'ss08' on, 'ss07' on;
+  font-feature-settings: "ss06" on, "ss05" on, "ss18" on, "ss17" on, "ss16" on,
+    "ss15" on, "ss14" on, "ss13" on, "ss12" on, "ss11" on, "ss10" on, "ss09" on,
+    "ss08" on, "ss07" on;
   font-family: "Wanted Sans";
   font-size: 20px;
   font-style: normal;
@@ -128,7 +134,7 @@ export const Actions = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   display: flex;
   border: none;
   cursor: pointer;
@@ -138,11 +144,11 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: #F42424;
-  color: #FFF;
+  background: #f42424;
+  color: #fff;
   leading-trim: both;
   text-edge: cap;
-  font-feature-settings: 'dlig' on;
+  font-feature-settings: "dlig" on;
   font-family: "Wanted Sans";
   font-size: 16px;
   font-style: normal;
@@ -152,7 +158,8 @@ export const Button = styled.button`
   text-decoration: none;
 
   &:hover {
-    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16),
+      0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   }
 
   @media ${device.laptop} {

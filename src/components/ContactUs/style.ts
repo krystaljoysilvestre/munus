@@ -18,9 +18,11 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: #01263A;
+  color: #01263a;
   text-align: center;
-  font-feature-settings: 'ss06' on, 'ss05' on, 'ss18' on, 'ss17' on, 'ss16' on, 'ss15' on, 'ss14' on, 'ss13' on, 'ss12' on, 'ss11' on, 'ss10' on, 'ss09' on, 'ss08' on, 'ss07' on;
+  font-feature-settings: "ss06" on, "ss05" on, "ss18" on, "ss17" on, "ss16" on,
+    "ss15" on, "ss14" on, "ss13" on, "ss12" on, "ss11" on, "ss10" on, "ss09" on,
+    "ss08" on, "ss07" on;
   font-family: "Minion Pro";
   font-size: 40px;
   font-style: normal;
@@ -54,7 +56,7 @@ export const Actions = styled.div`
 
 export const ButtonOutlined = styled.a`
   border-radius: 8px;
-  border: 1px solid #01263A;
+  border: 1px solid #01263a;
   display: flex;
   width: 100%;
   max-width: 340px;
@@ -62,10 +64,10 @@ export const ButtonOutlined = styled.a`
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  color: #01263A;
+  color: #01263a;
   leading-trim: both;
   text-edge: cap;
-  font-feature-settings: 'dlig' on;
+  font-feature-settings: "dlig" on;
   font-family: "Wanted Sans";
   font-size: 16px;
   font-style: normal;
@@ -79,11 +81,11 @@ export const ButtonOutlined = styled.a`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  background: #F42424;
+  background: #f42424;
   display: inline-flex;
   height: 48px;
   width: 100%;
@@ -91,7 +93,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  color: #FFF;
+  color: #fff;
   leading-trim: both;
   text-edge: cap;
   font-family: "Wanted Sans";
@@ -100,9 +102,11 @@ export const Button = styled.button`
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.32px;
+  text-decoration: none;
 
   &:hover {
-    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16),
+      0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   }
 
   @media ${device.laptop} {

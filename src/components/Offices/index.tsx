@@ -75,9 +75,7 @@ const Offices = () => {
           </CardItem>
         </Cards>
         <Actions>
-          <Button onClick={() => modal.setIsModalOpen(true)}>
-            Open an Office
-          </Button>
+          <Button href="https://ligala.mymunus.com/">Open an Office</Button>
         </Actions>
       </Container>
     </Wrapper>

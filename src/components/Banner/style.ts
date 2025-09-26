@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../../constants/device";
 
 export const Wrapper = styled.div`
-  background: linear-gradient(180deg, #FFF -32.44%, #EBF7F1 100%);
+  background: linear-gradient(180deg, #fff -32.44%, #ebf7f1 100%);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,10 +29,12 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: #01263A;
+  color: #01263a;
   max-width: 500px;
   text-align: center;
-  font-feature-settings: 'ss06' on, 'ss05' on, 'ss18' on, 'ss17' on, 'ss16' on, 'ss15' on, 'ss14' on, 'ss13' on, 'ss12' on, 'ss11' on, 'ss10' on, 'ss09' on, 'ss08' on, 'ss07' on;
+  font-feature-settings: "ss06" on, "ss05" on, "ss18" on, "ss17" on, "ss16" on,
+    "ss15" on, "ss14" on, "ss13" on, "ss12" on, "ss11" on, "ss10" on, "ss09" on,
+    "ss08" on, "ss07" on;
   font-family: "Nanum Myeongjo", serif;
   font-size: 48px;
   font-style: normal;
@@ -59,7 +61,7 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.div`
-  color: #01263A;
+  color: #01263a;
   text-align: center;
   font-family: "Wanted Sans";
   font-size: 20px;
@@ -78,7 +80,7 @@ export const Description = styled.div`
 `;
 
 export const Sup = styled.sup`
-  color: #01263A;
+  color: #01263a;
   font-family: "Wanted Sans";
   font-size: 12px;
   font-style: normal;
@@ -107,11 +109,11 @@ export const ButtonOutlined = styled.a`
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  border: 1px solid #01263A;
-  color: #01263A;
+  border: 1px solid #01263a;
+  color: #01263a;
   leading-trim: both;
   text-edge: cap;
-  font-feature-settings: 'dlig' on;
+  font-feature-settings: "dlig" on;
   font-family: "Wanted Sans";
   font-size: 16px;
   font-style: normal;
@@ -125,7 +127,7 @@ export const ButtonOutlined = styled.a`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   display: inline-flex;
   border: none;
   height: 48px;
@@ -134,11 +136,11 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: #F42424;
+  background: #f42424;
   color: #fff;
   leading-trim: both;
   text-edge: cap;
-  font-feature-settings: 'dlig' on;
+  font-feature-settings: "dlig" on;
   font-family: "Wanted Sans";
   font-size: 16px;
   font-style: normal;
@@ -149,7 +151,8 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16),
+      0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   }
 
   @media ${device.laptop} {

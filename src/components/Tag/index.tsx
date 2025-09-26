@@ -44,9 +44,9 @@ const Tag = () => {
               <div>
                 <ContentTitle>Tap-And-Go</ContentTitle>
                 <ContentText>
-                  Talk about munus tag. How munus tag works. Describe features
-                  and benefits. Could add a link to show a more detailed guide
-                  on how to use.
+                  Munus Tag helps you stay reachable and memorable across
+                  platforms. It’s the easy way to grow your network and keep the
+                  conversation going.
                 </ContentText>
               </div>
             </Content>

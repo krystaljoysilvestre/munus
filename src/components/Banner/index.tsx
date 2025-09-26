@@ -16,8 +16,6 @@ import {
 } from "./style";
 
 const Banner = () => {
-  const modal = useContext(ModalContext);
-
   return (
     <Wrapper id="hero-banner">
       <Header />
@@ -33,9 +31,7 @@ const Banner = () => {
             <ButtonOutlined href="mailto:access@mymunus.com">
               Ask us More
             </ButtonOutlined>
-            <Button onClick={() => modal.setIsModalOpen(true)}>
-              Open an Office
-            </Button>
+            <Button href="https://ligala.mymunus.com/">Open an Office</Button>
           </Actions>
         </Content>
       </Container>

@@ -91,10 +91,10 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled.div`
-  color: #01263A;
+  color: #01263a;
   leading-trim: both;
   text-edge: cap;
-  font-feature-settings: 'ss04' on, 'ss06' on, 'salt' on;
+  font-feature-settings: "ss04" on, "ss06" on, "salt" on;
   font-family: "Wanted Sans";
   font-size: 14px;
   font-style: normal;
@@ -109,11 +109,11 @@ export const NavLink = styled.div`
 
 export const Badge = styled.div`
   border-radius: 16px;
-  background: #01263A;
+  background: #01263a;
   display: flex;
   padding: 4px 8px;
   align-items: center;
-  color: #A5FF5E;
+  color: #a5ff5e;
   font-family: "Reddit Mono";
   font-size: 10px;
   font-style: normal;
@@ -135,7 +135,7 @@ export const ButtonText = styled.a`
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  color: #01263A;
+  color: #01263a;
   leading-trim: both;
   text-edge: cap;
   font-family: "Wanted Sans";
@@ -153,11 +153,11 @@ export const Button = styled.a`
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: #F42424;
-  color: #FFF;
+  background: #f42424;
+  color: #fff;
   leading-trim: both;
   text-edge: cap;
-  font-feature-settings: 'dlig' on;
+  font-feature-settings: "dlig" on;
   font-family: "Wanted Sans";
   font-size: 14px;
   font-style: normal;
@@ -165,16 +165,22 @@ export const Button = styled.a`
   line-height: 21px; /* 150% */
   letter-spacing: 0.28px;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
-    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.16),
+      0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   }
 `;
 
 export const ModernDrawer = styled(Drawer)`
   height: 494px !important;
   border-radius: 16px 16px 0px 0px;
-  background: radial-gradient(94.82% 94.82% at 22% 26.92%, #F42424 19.1%, #C00B4C 100%) !important;
+  background: radial-gradient(
+    94.82% 94.82% at 22% 26.92%,
+    #f42424 19.1%,
+    #c00b4c 100%
+  ) !important;
 `;
 
 export const DrawerHeader = styled.div`
@@ -194,8 +200,10 @@ export const DrawerMenu = styled.div`
 `;
 
 export const DrawerMenuItem = styled.div`
-  color: #FFF;
-  font-feature-settings: 'ss06' on, 'ss05' on, 'ss18' on, 'ss17' on, 'ss16' on, 'ss15' on, 'ss14' on, 'ss13' on, 'ss12' on, 'ss11' on, 'ss10' on, 'ss09' on, 'ss08' on, 'ss07' on;
+  color: #fff;
+  font-feature-settings: "ss06" on, "ss05" on, "ss18" on, "ss17" on, "ss16" on,
+    "ss15" on, "ss14" on, "ss13" on, "ss12" on, "ss11" on, "ss10" on, "ss09" on,
+    "ss08" on, "ss07" on;
   font-family: "Wanted Sans";
   font-size: 32px;
   font-style: normal;
@@ -207,7 +215,7 @@ export const DrawerMenuItem = styled.div`
     cursor: pointer;
   }
 
-  & button {
+  & a {
     display: flex;
     height: 48px;
     padding: 8px 16px;
@@ -216,13 +224,12 @@ export const DrawerMenuItem = styled.div`
     gap: 8px;
     align-self: stretch;
     border-radius: 12px;
-    background: #FFF;
+    background: #fff;
     border: none;
-    width: 100%;
-    color: #F42424;
+    color: #f42424;
     leading-trim: both;
     text-edge: cap;
-    font-feature-settings: 'dlig' on;
+    font-feature-settings: "dlig" on;
     font-family: "Wanted Sans";
     font-size: 16px;
     font-style: normal;
@@ -230,6 +237,7 @@ export const DrawerMenuItem = styled.div`
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
     cursor: pointer;
+    text-decoration: none;
 
     @media ${device.mobileL} {
       max-width: 342px;
